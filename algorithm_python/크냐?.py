@@ -10,16 +10,14 @@
 
 
 def test(a, b):
-	if (a and b) >= 0 and (a and b) <= 100:
-		if a > b:
-			print("Yes. 첫 번째 숫자가 더 큽니다.")
-		else:
-			print("No. 두 번째 숫자가 더 크거나 같습니다.")
+	if a > b:
+		print("Yes. 첫 번째 숫자가 더 큽니다.")
 	else:
-		print("숫자가 범위를 벗어납니다.")
+		print("No. 두 번째 숫자가 더 크거나 같습니다.")
 
 
 typed_a = int(input("첫 번째 수를 입력하세요."))
+
 if typed_a > 100 or typed_a < 0:
 	print("첫 번째 숫자가 범위를 벗어납니다.")
 	exit();
