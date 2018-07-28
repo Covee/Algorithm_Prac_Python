@@ -7,12 +7,21 @@
 # 첫째 줄에 단어의 개수를 출력한다.
 
 
-def find_num_word(sentence):
-	
+
+
+sentence = input("입력하신 문장을 이루고 있는 단어의 갯수를 알아보기 위해 문장을 입력해 주세요: ")
+
+if len(sentence) < 0 and len(sentence) > 100:
+	print("문장의 길이가 모자라거나 100자를 초과하였습니다.")
+else:
+	sentence_t = list(map(str, sentence.split(" ")))
+	num_s = len(sentence_t)
+	print("입력하신 문장을 이루고 있는 단어의 갯수는 " + str(num_s) + "개 이며 총 " + str(len(sentence)) + "개의 문자로 이루어져 있습니다.")
 
 
 
-# comment: 
+
+# comment: 넘나 쉬운데?
 
 
 
